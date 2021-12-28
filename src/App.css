@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   letter-spacing: -1px;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -25,7 +28,13 @@ button {
   cursor: pointer;
 }
 
-header, nav, main, footer, section, article, aside {
+header,
+nav,
+main,
+footer,
+section,
+article,
+aside {
   display: block;
 }
 
@@ -48,11 +57,11 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 42px;
 }
 
@@ -67,8 +76,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__top .confix .header__top-left .header__logo .logo__link img {
@@ -88,8 +97,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__top .confix .header__top-left .header__search form {
@@ -120,11 +129,11 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 8.5px;
   color: #28a93a;
 }
@@ -202,8 +211,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__top .confix .header__top-right .header__auth .auth__user {
@@ -211,8 +220,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 15px;
   color: white;
   font-size: 12px;
@@ -295,11 +304,11 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header__bottom .confix nav ul {
@@ -320,7 +329,8 @@ header, nav, main, footer, section, article, aside {
   line-height: 40px;
 }
 
-.header__bottom .confix nav ul li a:hover, .header__bottom .confix nav ul li a.active {
+.header__bottom .confix nav ul li a:hover,
+.header__bottom .confix nav ul li a.active {
   font-weight: bold;
   color: #28a93a;
   border-bottom: 3.5px solid #28a93a;
@@ -368,8 +378,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .blog-top .confix .hot-topic__select {
@@ -377,9 +387,9 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 10px;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .blog-top .confix .hot-topic__select h2 {
@@ -399,7 +409,8 @@ header, nav, main, footer, section, article, aside {
 }
 
 .blog-top .confix .hot-topic__select .hot-topic__num span {
-  padding: 0px 6px;
+  margin-left: 3px;
+  padding: 2px 6px;
   border: 1px solid lightgray;
   font-size: 12px;
   cursor: pointer;
@@ -420,8 +431,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .blog-top .confix .hot-topic__list ul li {
@@ -519,7 +530,8 @@ header, nav, main, footer, section, article, aside {
 }
 
 .blog-top .confix .ad__num span {
-  padding: 0px 6px;
+  margin-left: 3px;
+  padding: 2px 6px;
   border: 1px solid lightgray;
   font-size: 12px;
   cursor: pointer;
@@ -549,8 +561,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .blog-bottom .confix .neighbor-post {
@@ -564,8 +576,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .blog-bottom .confix .neighbor-post .neighbor-filter__top h2 {
@@ -585,8 +597,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   cursor: pointer;
 }
 
@@ -608,8 +620,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-size: 13px;
   cursor: pointer;
 }
@@ -624,14 +636,19 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 30px 0;
   border-bottom: 1px solid #eee;
 }
 
 .blog-bottom .confix .neighbor-post ul.post-list li .neighbor-post__text {
   width: 75%;
+  margin-right: 20px;
+}
+
+.blog-bottom .confix .neighbor-post ul.post-list li:nth-child(2) .neighbor-post__text {
+  width: 100%;
   margin-right: 20px;
 }
 
@@ -659,8 +676,8 @@ header, nav, main, footer, section, article, aside {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: 14px;
 }
 
@@ -703,11 +720,11 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .blog-bottom .confix .neighbor-post ul.post-list li .neighbor-post__text .comment .comment-left {
@@ -721,8 +738,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 15px;
   cursor: pointer;
 }
@@ -738,7 +755,16 @@ header, nav, main, footer, section, article, aside {
   font-size: 12px;
 }
 
-.blog-bottom .confix .neighbor-post ul.post-list li .neighbor-post__text .comment .comment-left .comment__heart .comment__heart-num {
+.blog-bottom
+  .confix
+  .neighbor-post
+  ul.post-list
+  li
+  .neighbor-post__text
+  .comment
+  .comment-left
+  .comment__heart
+  .comment__heart-num {
   margin-left: 5px;
   font-weight: bold;
 }
@@ -748,17 +774,35 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
 }
 
-.blog-bottom .confix .neighbor-post ul.post-list li .neighbor-post__text .comment .comment-left .comment__comment .comment-img {
+.blog-bottom
+  .confix
+  .neighbor-post
+  ul.post-list
+  li
+  .neighbor-post__text
+  .comment
+  .comment-left
+  .comment__comment
+  .comment-img {
   margin-right: 5px;
   color: #9c9c9c;
 }
 
-.blog-bottom .confix .neighbor-post ul.post-list li .neighbor-post__text .comment .comment-left .comment__comment .comment__comment-num {
+.blog-bottom
+  .confix
+  .neighbor-post
+  ul.post-list
+  li
+  .neighbor-post__text
+  .comment
+  .comment-left
+  .comment__comment
+  .comment__comment-num {
   font-size: 12px;
   font-weight: bold;
 }
@@ -778,9 +822,13 @@ header, nav, main, footer, section, article, aside {
   width: 100%;
 }
 
+.blog-bottom .confix .neighbor-post ul.post-list li:nth-child(2) .neighbor-post__img {
+  display: none;
+}
+
 .blog-bottom .confix .my-blog {
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   width: 28%;
   background: #f5f5f6;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -866,12 +914,16 @@ header, nav, main, footer, section, article, aside {
   border-right: 1px solid #28a93a;
 }
 
+.blog-bottom .confix .my-blog .my-blog__link .write-button .write-icon i {
+  margin-right: 5px;
+}
+
 .blog-bottom .confix .my-blog .my-blog__list ul.list-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .blog-bottom .confix .my-blog .my-blog__list ul.list-title li {
@@ -883,7 +935,8 @@ header, nav, main, footer, section, article, aside {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.blog-bottom .confix .my-blog .my-blog__list ul.list-title li.active, .blog-bottom .confix .my-blog .my-blog__list ul.list-title li:hover {
+.blog-bottom .confix .my-blog .my-blog__list ul.list-title li.active,
+.blog-bottom .confix .my-blog .my-blog__list ul.list-title li:hover {
   color: black;
   border-bottom: 1px solid black;
 }
@@ -943,8 +996,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .blog-bottom .confix .my-blog .from-blog .from-blog-bottom .question {
@@ -964,8 +1017,8 @@ header, nav, main, footer, section, article, aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   background-color: white;
   border-top: 1px solid #eee;
 }
