@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Hot_topic_writer, Hot_topic_title, Hot_topic_contents, Post_contents_title, Post_contents } from './data';
+import data from './data.json';
 
 function App() {
   return (
@@ -167,51 +167,23 @@ function Blog__top() {
 
             <div className="hot-topic__list">
               <ul>
-                <li>
-                  <img src="./images/hot-topic-rice1.jpg" alt="hot-topic-rice1" />
-                  <div className="list__text">
-                    <p className="list__text-title">{Hot_topic_title(0)}</p>
+                {data.hotTopic.map((hotTopic) => (
+                  <li key={hotTopic.id}>
+                    <img src={hotTopic.image} alt="hot-topic-rice" />
+                    <div className="list__text">
+                      <p className="list__text-title">{hotTopic.title}</p>
 
-                    <div className="list__hide-text">
-                      <div className="post-icon">
-                        <span className="post-icon-img"></span>
-                        <span className="post-icon-name">{Hot_topic_writer(0)}</span>
+                      <div className="list__hide-text">
+                        <div className="post-icon">
+                          <span className="post-icon-img"></span>
+                          <span className="post-icon-name">{hotTopic.writer}</span>
+                        </div>
+
+                        <p>{hotTopic.contents}</p>
                       </div>
-
-                      <p>{Hot_topic_contents(0)}</p>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <img src="./images/hot-topic-rice2.jpg" alt="hot-topic-rice2" />
-                  <div className="list__text">
-                    <p className="list__text-title">{Hot_topic_title(1)}</p>
-
-                    <div className="list__hide-text">
-                      <div className="post-icon">
-                        <span className="post-icon-img"></span>
-                        <span className="post-icon-name">{Hot_topic_writer(1)}</span>
-                      </div>
-
-                      <p>{Hot_topic_contents(1)}</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <img src="./images/hot-topic-rice3.jpg" alt="hot-topic-rice3" />
-                  <div className="list__text">
-                    <p className="list__text-title">{Hot_topic_title(2)}</p>
-
-                    <div className="list__hide-text">
-                      <div className="post-icon">
-                        <span className="post-icon-img"></span>
-                        <span className="post-icon-name">{Hot_topic_writer(2)}</span>
-                      </div>
-
-                      <p>{Hot_topic_contents(2)}</p>
-                    </div>
-                  </div>
-                </li>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -267,90 +239,52 @@ function Blog__bottom() {
             </div>
 
             <ul className="post-list">
-              <li>
-                <div className="neighbor-post__text">
-                  <div className="user">
-                    <div className="user-img"></div>
+              {data.postContents.map((post) => (
+                <li key={post.id}>
+                  <div className="neighbor-post__text">
+                    <div className="user">
+                      <div className="user-img"></div>
 
-                    <div className="user-post-info">
-                      <span className="user-name">돌</span>
-                      <span className="post-time">20시간 전</span>
+                      <div className="user-post-info">
+                        <span className="user-name">돌</span>
+                        <span className="post-time">{post.postTime}</span>
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="post-contents">
-                    <h3> {Post_contents_title(0)} </h3>
-                    <p> {Post_contents(0)} </p>
+                    <div className="post-contents">
+                      <h3>{post.title}</h3>
+                      <p>{post.contents}</p>
 
-                    <div className="comment">
-                      <div className="comment-left">
-                        <div className="comment__heart">
-                          <div className="heart-img"></div>
-                          <span>공감해요</span>
-                          <span className="comment__heart-num">4</span>
-                        </div>
-
-                        <div className="comment__comment">
-                          <div className="comment-img">
-                            <i className="fas fa-comment-dots"></i>
+                      <div className="comment">
+                        <div className="comment-left">
+                          <div className="comment__heart">
+                            <div className="heart-img"></div>
+                            <span>공감해요</span>
+                            <span className="comment__heart-num">4</span>
                           </div>
-                          <span className="comment__comment-num">0</span>
-                        </div>
-                      </div>
 
-                      <div className="comment-right">
-                        <div className="comment__share">
-                          <i className="far fa-share-square"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="neighbor-post__img">
-                  <img src="./images/post-img.png" alt="post-img" />
-                </div>
-              </li>
-              <li>
-                <div className="neighbor-post__text only-text">
-                  <div className="user">
-                    <div className="user-img"></div>
-
-                    <div className="user-post-info">
-                      <span className="user-name">돌</span>
-                      <span className="post-time">20시간 전</span>
-                    </div>
-                  </div>
-
-                  <div className="post-contents">
-                    <h3> {Post_contents_title(1)} </h3>
-                    <p> {Post_contents(1)} </p>
-
-                    <div className="comment">
-                      <div className="comment-left">
-                        <div className="comment__heart">
-                          <div className="heart-img"></div>
-                          <span>공감해요</span>
-                          <span className="comment__heart-num">4</span>
-                        </div>
-
-                        <div className="comment__comment">
-                          <div className="comment-img">
-                            <i className="fas fa-comment-dots"></i>
+                          <div className="comment__comment">
+                            <div className="comment-img">
+                              <i className="fas fa-comment-dots"></i>
+                            </div>
+                            <span className="comment__comment-num">0</span>
                           </div>
-                          <span className="comment__comment-num">0</span>
                         </div>
-                      </div>
 
-                      <div className="comment-right">
-                        <div className="comment__share">
-                          <i className="far fa-share-square"></i>
+                        <div className="comment-right">
+                          <div className="comment__share">
+                            <i className="far fa-share-square"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </li>
+
+                  <div className="neighbor-post__img">
+                    <img src={post.image} alt="post-img" />
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -380,7 +314,7 @@ function Blog__bottom() {
               <button className="write-button">
                 <span className="write-icon">
                   <i className="fas fa-pen"></i>
-                </span>{' '}
+                </span>
                 글쓰기
               </button>
             </div>
